@@ -21,7 +21,7 @@ Copia `.env.example` y renombralo como `.env.local`.
 Dentro coloca:
 
 ```txt
-OPENAI_API_KEY=sk-tu_clave_real
+OPENAI_API_KEY=coloca_tu_clave_openai_aqui
 ```
 
 ## 3. Ejecutar con IA localmente
