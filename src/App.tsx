@@ -363,7 +363,7 @@ function exportarExcel(datos: Registro[]) {
   const columnas = ["Puesto", "Fecha", "Semana", "Estudiante", "Grado", "Sección", "Docente", "Juego", "Nivel", "Puntaje", "Correctas", "Incorrectas", "Precisión", "Respondidas"];
   const filas = datos.map((r, i) => [i + 1, r.fecha, r.semana, r.estudiante, r.grado, r.seccion, r.docente, r.juego, r.nivelNombre, r.puntaje, r.correctas, r.incorrectas, r.precision, r.respondidas]);
   let html = "<html><head><meta charset='UTF-8'></head><body>";
-  html += "<h2>Reto 10 Matemático - I.E. República de Chile</h2>";
+  html += "<h2>Matemática en Acción - I.E. República de Chile</h2>";
   html += "<table border='1'><thead><tr>";
   columnas.forEach((c) => { html += "<th>" + c + "</th>"; });
   html += "</tr></thead><tbody>";
