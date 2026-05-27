@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/generar-ejercicio.ts": {
+      "maxDuration": 10
+    }
+  }
+}
