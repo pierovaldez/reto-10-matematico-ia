@@ -29,7 +29,7 @@ import {
 } from "lucide-react";
 import { escucharPuntajes, guardarPuntajeFirebase, limpiarPuntajesFirebase } from "./firebase";
 
-const LOGO_URL = "/reto-10-matematico/logo-republica-chile.png";
+const LOGO_URL = "/logo-republica-chile.png";
 const CLAVE_GESTION = "RCH2026";
 
 const DOCENTES = ["Oscar", "Jose Orlando", "Piero Valdez", "Cesar", "Gladys Lizana", "Erica Cossio"];
