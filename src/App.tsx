@@ -392,7 +392,7 @@ function generarResumenAutomatico({ registros, aulaCampeona, mejoraTop }: { regi
   return partes.join(" ");
 }
 function exportarReporteTexto({ resumen, aulaCampeona, topGrado }: { resumen: string; aulaCampeona: any; topGrado: any[] }) {
-  const lineas = ["REPORTE INSTITUCIONAL - RETO 10 MATEMÁTICO", "I.E. República de Chile", "", "RESUMEN AUTOMÁTICO:", resumen || "Sin resumen disponible.", ""];
+  const lineas = ["REPORTE INSTITUCIONAL - Matemática en Acción", "I.E. República de Chile", "", "RESUMEN AUTOMÁTICO:", resumen || "Sin resumen disponible.", ""];
   lineas.push(aulaCampeona ? `SECCIÓN CAMPEONA: ${aulaCampeona.aula} - Promedio: ${aulaCampeona.promedio} puntos` : "SECCIÓN CAMPEONA: Sin datos.");
   lineas.push("", "TOP 3 POR GRADO:");
   topGrado.forEach((grupo) => {
@@ -657,7 +657,7 @@ export default function App() {
 }
 
 function Header() {
-  return <motion.header initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="text-center space-y-4"><div className="flex justify-center"><Logo /></div><div className="inline-flex items-center gap-2 bg-white text-slate-900 border border-yellow-300/50 rounded-full px-4 py-2 text-sm shadow-md"><School size={18} /> I.E. República de Chile - Lince</div><h1 className="text-3xl md:text-6xl font-bold drop-shadow-lg text-white">Reto 10 Matemático</h1><p className="text-blue-50 max-w-3xl mx-auto">Plataforma institucional para practicar cálculo, registrar puntajes y motivar la competencia sana entre aulas.</p></motion.header>;
+  return <motion.header initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="text-center space-y-4"><div className="flex justify-center"><Logo /></div><div className="inline-flex items-center gap-2 bg-white text-slate-900 border border-yellow-300/50 rounded-full px-4 py-2 text-sm shadow-md"><School size={18} /> I.E. República de Chile - Lince</div><h1 className="text-3xl md:text-6xl font-bold drop-shadow-lg text-white">Matemática en Acción</h1><p className="text-blue-50 max-w-3xl mx-auto">Sistema institucional orientado a fortalecer el cálculo mental mediante retos breves, seguimiento de avances y reconocimiento del esfuerzo de los estudiantes.</p></motion.header>;
 }
 function PanelCard({ children, className = "", padding = "p-6" }: any) { return <div className={`bg-white text-slate-900 border border-yellow-300/40 shadow-2xl rounded-2xl ${className}`}><div className={padding}>{children}</div></div>; }
 function SectionTitle({ icon, title }: any) { return <div className="flex items-center gap-3 mb-5">{icon}<h2 className="text-2xl font-bold text-slate-900">{title}</h2></div>; }
